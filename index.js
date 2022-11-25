@@ -56,7 +56,7 @@ app.get('/api/contact/:id',(req,res)=>{
 app.delete('/api/contact/:id',(req,res)=>{
     const id=req.params.id
     // contact= contact.filter(cont=>cont.id!== id)
-    Contact.findByIdAndRemove(id).then(() => res.status(204)).end()
+    Contact.findByIdAndRemove(id).then(() => res.status(204))
 
     // res.status(204).end()
 })
